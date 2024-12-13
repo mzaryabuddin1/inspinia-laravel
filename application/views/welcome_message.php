@@ -67,7 +67,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<div class="tt-ol-menu-inner tt-wrap">
 									<div class="tt-ol-menu-content">
 										<ul class="tt-ol-menu-list">
-											<li class="active"><a href="landing-page.html">Home</a></li>
+											<li class="active"><a href="#">Home</a></li>
 											<li class="tt-ol-submenu-wrap">
 												<div class="tt-ol-submenu-trigger">
 													<a href="#">Portfolio</a>
@@ -77,67 +77,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												</div>
 												<div class="tt-ol-submenu">
 													<ul class="tt-ol-submenu-list">
-														<li class="tt-ol-submenu-wrap">
-															<div class="tt-ol-submenu-trigger">
-																<a href="#" class="tt-ol-submenu-link">Portfolio List</a>
-																<div class="tt-ol-submenu-caret-wrap">
-																	<div class="tt-ol-submenu-caret magnetic-item"></div>
-																</div>
-															</div>
-															<div class="tt-ol-submenu">
-																<ul class="tt-ol-submenu-list">
-																	<li><a href="portfolio-list.html">Portfolio List v.1</a></li>
-																	<li><a href="portfolio-list-alter.html">Portfolio List v.2</a></li>
-																</ul>
-															</div>
-														</li>
-														<li class="tt-ol-submenu-wrap">
-															<div class="tt-ol-submenu-trigger">
-																<a href="#" class="tt-ol-submenu-link">Portfolio Grid</a>
-																<div class="tt-ol-submenu-caret-wrap">
-																	<div class="tt-ol-submenu-caret magnetic-item"></div>
-																</div>
-															</div>
-															<div class="tt-ol-submenu">
-																<ul class="tt-ol-submenu-list">
-																	<li><a href="portfolio-grid-creative.html">Grid Creative</a></li>
-																	<li><a href="portfolio-grid-modern.html">Grid Modern</a></li>
-																	<li><a href="portfolio-grid-portrait-mode.html">Grid Portrait Mode</a></li>
-																	<li><a href="portfolio-grid-classic.html">Grid Classic</a></li>
-																</ul>
-															</div>
-														</li>
-														<li class="tt-ol-submenu-wrap">
-															<div class="tt-ol-submenu-trigger">
-																<a href="#" class="tt-ol-submenu-link">Portfolio Interactive</a>
-																<div class="tt-ol-submenu-caret-wrap">
-																	<div class="tt-ol-submenu-caret magnetic-item"></div>
-																</div>
-															</div>
-															<div class="tt-ol-submenu">
-																<ul class="tt-ol-submenu-list">
-																	<li><a href="portfolio-interactive.html">Interactive Classic</a></li>
-																	<li><a href="portfolio-interactive-center.html">Interactive Senter</a></li>
-																	<li><a href="portfolio-interactive-inline.html">Interactive Inline</a></li>
-																</ul>
-															</div>
-														</li>
-														<li class="tt-ol-submenu-wrap">
-															<div class="tt-ol-submenu-trigger">
-																<a href="#" class="tt-ol-submenu-link">Slider &amp; Carousel</a>
-																<div class="tt-ol-submenu-caret-wrap">
-																	<div class="tt-ol-submenu-caret magnetic-item"></div>
-																</div>
-															</div>
-															<div class="tt-ol-submenu">
-																<ul class="tt-ol-submenu-list">
-																	<li><a href="portfolio-fullscreen-slider.html">Fullscreen Slider</a></li>
-																	<li><a href="portfolio-fullscreen-carousel.html">Fullscreen Carousel</a></li>
-																</ul>
-															</div>
-														</li>
-														<li><a href="portfolio-one-column.html">One Column</a></li>
-														<li><a href="elements-classic-menu.html">Classic Menu</a></li>
+														<li><a href="#">Product List</a></li>
+														<li><a href="#">Digital Assets</a></li>
 													</ul>
 												</div>
 											</li>
@@ -150,51 +91,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												</div>
 												<div class="tt-ol-submenu">
 													<ul class="tt-ol-submenu-list">
-														<li><a href="about-us.html">About Us</a></li>
-														<li><a href="about-me.html">About Me</a></li>
-													</ul>
-												</div>
-											</li>
-											<li class="tt-ol-submenu-wrap">
-												<div class="tt-ol-submenu-trigger">
-													<a href="#">Blog</a>
-													<div class="tt-ol-submenu-caret-wrap">
-														<div class="tt-ol-submenu-caret magnetic-item"></div>
-													</div>
-												</div>
-												<div class="tt-ol-submenu">
-													<ul class="tt-ol-submenu-list">
-														<li class="tt-ol-submenu-wrap">
-															<div class="tt-ol-submenu-trigger">
-																<a href="#" class="tt-ol-submenu-link">Blog List</a>
-																<div class="tt-ol-submenu-caret-wrap">
-																	<div class="tt-ol-submenu-caret magnetic-item"></div>
-																</div>
-															</div>
-															<div class="tt-ol-submenu">
-																<ul class="tt-ol-submenu-list">
-																	<li><a href="blog-classic.html">Blog Classic</a></li>
-																	<li><a href="blog-classic-sidebar.html">Classic Sidebar</a></li>
-																	<li><a href="blog-compact.html">Compact List</a></li>
-																	<li><a href="blog-archive.html">Blog Archive</a></li>
-																</ul>
-															</div>
-														</li>
-														<li class="tt-ol-submenu-wrap">
-															<div class="tt-ol-submenu-trigger">
-																<a href="#" class="tt-ol-submenu-link">Blog Post</a>
-																<div class="tt-ol-submenu-caret-wrap">
-																	<div class="tt-ol-submenu-caret magnetic-item"></div>
-																</div>
-															</div>
-															<div class="tt-ol-submenu">
-																<ul class="tt-ol-submenu-list">
-																	<li><a href="blog-post.html">Single Post</a></li>
-																	<li><a href="blog-post-classic-sidebar.html">Classic Sidebar</a></li>
-																	<li><a href="blog-post-no-featured-image.html">No Featured Image</a></li>
-																</ul>
-															</div>
-														</li>
+														<li><a href="#">About Us</a></li>
+														<li><a href="#">About Team</a></li>
 													</ul>
 												</div>
 											</li>
@@ -207,8 +105,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 												</div>
 												<div class="tt-ol-submenu">
 													<ul class="tt-ol-submenu-list">
-														<li><a href="contact.html">Contact Form</a></li>
-														<li><a href="contact-simple.html">Contact Simple</a></li>
+														<li><a href="#">Contact Form</a></li>
+														<li><a href="#">Find Us</a></li>
 													</ul>
 												</div>
 											</li>
@@ -217,11 +115,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											<li>
 												<h6 class="tt-ol-menu-social-heading">Social Links:</h6>
 											</li>
-											<li><a href="https://www.facebook.com/themetorium" target="_blank" rel="noopener">Facebook</a></li>
-											<li><a href="https://twitter.com/Themetorium" target="_blank" rel="noopener">Twitter</a></li>
-											<li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Youtube</a></li>
-											<li><a href="https://dribbble.com/Themetorium" target="_blank" rel="noopener">Dribbble</a></li>
-											<li><a href="https://www.behance.net/Themetorium" target="_blank" rel="noopener">Behance</a></li>
+											<li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+											<li><a href="#" target="_blank" rel="noopener">Linkedin</a></li>
+											<li><a href="#" target="_blank" rel="noopener">Website</a></li>
 										</ul>
 									</div>
 								</div>
@@ -680,23 +576,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     </div>
                                     <div class="social-buttons">
                                         <ul>
-                                            <li><a href="https://www.facebook.com/themetorium" class="magnetic-item"
+                                            <li><a href="#" class="magnetic-item"
                                                     target="_blank" rel="noopener"><i
                                                         class="fab fa-facebook-f"></i></a>
                                             </li>
-                                            <li><a href="https://twitter.com/Themetorium" class="magnetic-item"
-                                                    target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                                            <li><a href="#" class="magnetic-item"
+                                                    target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
                                             </li>
-                                            <li><a href="https://www.youtube.com/" class="magnetic-item"
-                                                    target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                                            <li><a href="#" class="magnetic-item"
+                                                    target="_blank" rel="noopener"><i class="fas fa-globe"></i></a>
                                             </li>
-                                            <li><a href="https://dribbble.com/Themetorium" class="magnetic-item"
-                                                    target="_blank" rel="noopener"><i
-                                                        class="fab fa-dribbble"></i></a>
-                                            </li>
-                                            <li><a href="https://www.behance.net/Themetorium" class="magnetic-item"
-                                                    target="_blank" rel="noopener"><i class="fab fa-behance"></i></a>
-                                            </li>
+                                          
                                         </ul>
                                     </div>
                                 </div>
