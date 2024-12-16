@@ -132,7 +132,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						<div class="ph-caption">
 							<h1 class="ph-caption-title">
 								<div class="ph-appear">Digital-first,<br> user <span class="hide-from-sm">→</span>
-									<em class="text-stroke-light">focused</em><br> development solutions
+									<em class="text-stroke-light">focused</em><br> software solutions
 								</div>
 							</h1>
 							<div class="ph-caption-title-ghost">
@@ -410,45 +410,45 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <li>
                                     <a href="https://liveasoft.com/" class="cursor-alter" target="_blank"
                                         rel="noopener">
-                                        <img src="assets/img/clients/client-1-light.png" class="lv-client-light"
+                                        <img src="assets/img/clients/CRM-Light.png" class="lv-client-light"
                                             alt="Client">
-                                        <img src="assets/img/clients/client-1-dark.png" class="lv-client-dark"
-                                            alt="Client">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://liveasoft.com/" class="cursor-alter" target="_blank"
-                                        rel="noopener">
-                                        <img src="assets/img/clients/client-2-light.png" class="lv-client-light"
-                                            alt="Client">
-                                        <img src="assets/img/clients/client-2-dark.png" class="lv-client-dark"
+                                        <img src="assets/img/clients/CRM-Dark.png" class="lv-client-dark"
                                             alt="Client">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://liveasoft.com/" class="cursor-alter" target="_blank"
                                         rel="noopener">
-                                        <img src="assets/img/clients/client-3-light.png" class="lv-client-light"
+                                        <img src="assets/img/clients/Healthberry-Light.png" class="lv-client-light"
                                             alt="Client">
-                                        <img src="assets/img/clients/client-3-dark.png" class="lv-client-dark"
-                                            alt="Client">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://liveasoft.com/" class="cursor-alter" target="_blank"
-                                        rel="noopener">
-                                        <img src="assets/img/clients/client-4-light.png" class="lv-client-light"
-                                            alt="Client">
-                                        <img src="assets/img/clients/client-4-dark.png" class="lv-client-dark"
+                                        <img src="assets/img/clients/Healthberry-Dark.png" class="lv-client-dark"
                                             alt="Client">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://liveasoft.com/" class="cursor-alter" target="_blank"
                                         rel="noopener">
-                                        <img src="assets/img/clients/client-5-light.png" class="lv-client-light"
+                                        <img src="assets/img/clients/Blinds-Light.png" class="lv-client-light"
                                             alt="Client">
-                                        <img src="assets/img/clients/client-5-dark.png" class="lv-client-dark"
+                                        <img src="assets/img/clients/Blinds-Dark.png" class="lv-client-dark"
+                                            alt="Client">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://liveasoft.com/" class="cursor-alter" target="_blank"
+                                        rel="noopener">
+                                        <img src="assets/img/clients/Fragrance-Light-01.png" class="lv-client-light"
+                                            alt="Client">
+                                        <img src="assets/img/clients/Fragrance-Dark-01.png" class="lv-client-dark"
+                                            alt="Client">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://liveasoft.com/" class="cursor-alter" target="_blank"
+                                        rel="noopener">
+                                        <img src="assets/img/clients/Engineering-Light.png" class="lv-client-light"
+                                            alt="Client">
+                                        <img src="assets/img/clients/Engineering-Dark.png" class="lv-client-dark"
                                             alt="Client">
                                     </a>
                                 </li>
@@ -609,6 +609,56 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<script src="<?= base_url() ?>assets/vendor/lightgallery/js/lightgallery-all.min.js"></script>
 	<script src="<?= base_url() ?>assets/vendor/jquery.mousewheel.min.js"></script>
 	<script src="<?= base_url() ?>assets/js/theme.js"></script>
+
+	<script>
+		$(function(){
+			$("#tt-contact-form").on("submit", function(){
+				// Send AJAX request
+				$.ajax({
+                        url: <?= base_url() ?>"contact-form",
+                        type: "post",
+                        data: formdata,
+                        processData: false,
+                        contentType: false,
+                        beforeSend: function() {
+                            $(":submit").prop("disabled", true);
+                            $(":submit").addClass("d-none");
+                            $("#spinner").removeClass("d-none");
+                            $("#error").addClass("d-none");
+                        },
+                        success: function(res) {
+                            let obj = JSON.parse(res);
+                            if (obj.error) {
+                                $("#error").html(obj.error);
+                                $("#error").removeClass("d-none");
+                                $("#spinner").addClass("d-none");
+                                $(":submit").removeClass("d-none");
+                                toastr.error("Please check errors list!", "Error");
+                                $(window).scrollTop(0);
+                            } else if (obj.success) {
+                                $("#spinner").addClass("d-none");
+                                toastr.success("Welcome!", "On Board!");
+                            } else {
+                                $("#spinner").addClass("d-none");
+                                $(":submit").prop("disabled", false);
+                                $(":submit").removeClass("d-none");
+                                toastr.error("Something bad happened!", "Error");
+                                $(window).scrollTop(0);
+                            }
+
+                            $(":submit").prop("disabled", false);
+                        },
+                        error: function(error) {
+                            toastr.error("Error while sending request to server!", "Error");
+                            $(window).scrollTop(0);
+                            $("#spinner").addClass("d-none");
+                            $(":submit").prop("disabled", false);
+                            $(":submit").removeClass("d-none");
+                        }
+                    });
+			})
+		})
+	</script>
 </body>
 
 </html>
