@@ -46,7 +46,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						<ul class="tt-contact-info padding-bottom-40 anim-fadeinup">
 							<li>
 								<span class="tt-ci-icon"><i class="fas fa-map-marker-alt"></i></span>
-								Suit # 06, 2nd Floor, Arkay Square, Shahra-e-liaquat, Karachi, Pakistan. 
+								Suit # 06, 2nd Floor, Arkay Square, Shahra-e-liaquat, Karachi, Pakistan.
 							</li>
 							<li>
 								<span class="tt-ci-icon"><i class="fas fa-phone"></i></span>
@@ -125,6 +125,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<textarea class="tt-form-control" rows="5" name="Message" placeholder=""
 									required></textarea>
 							</div>
+							<input type="hidden" name="recaptcha_token" id="recaptcha_token">
 							<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 									required!</em></small>
 							<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
@@ -142,7 +143,39 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </div>
 
 <?php require_once('layout/footer.php') ?>
-	
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LfZSKAqAAAAAIDXXoVOzET-Yui6rUzoKAP7MiX8"></script>
+<script>
+	$(document).ready(function() {
+		$("#tt-contact-form").submit(function(event) {
+			event.preventDefault(); // Prevent default form submission
+
+			grecaptcha.ready(function() {
+				grecaptcha.execute('6LfZSKAqAAAAAIDXXoVOzET-Yui6rUzoKAP7MiX8', {
+					action: 'submit'
+				}).then(function(token) {
+					$("#recaptcha_token").val(token); // Set the token in the hidden field
+
+					// Now submit the form with the reCAPTCHA token
+					$.ajax({
+						url: "<?= base_url() ?>contact-us-submit", // The PHP file that will process the form
+						method: "POST",
+						data: $("#tt-contact-form").serialize(),
+						success: function(response) {
+							alert("Message sent successfully!");
+							// Handle success, e.g., display a success message
+						},
+						error: function(xhr, status, error) {
+							alert("An error occurred. Please try again.");
+							// Handle error
+						}
+					});
+				});
+			});
+		});
+	});
+</script>
+
 </body>
 
 </html>

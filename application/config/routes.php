@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['contact-us'] = 'welcome/contact_us';
+$route['contact-us-submit'] = 'welcome/contact_us_submit';
