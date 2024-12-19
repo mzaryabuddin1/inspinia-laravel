@@ -71,6 +71,11 @@ class Welcome extends CI_Controller {
             // Recipients
             $mail->setFrom('info@liveasoft.com', 'Liveasoft Contact Form'); // Your from email
             $mail->addAddress('mzaryabuddin@gmail.com'); // Recipient email
+            $mail->addCC('safee.hussainy@yahoo.com'); // Recipient email
+            $mail->addCC('malik.zaryab@liveasoft.com'); // Recipient email
+            $mail->addCC('safeeullah.hussainy@liveasoft.com'); // Recipient email
+            $mail->addCC('jawaid@liveasoft.com'); // Recipient email
+
             $mail->addReplyTo($email, $name);
 
             // Content
