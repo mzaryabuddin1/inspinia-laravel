@@ -13,7 +13,4 @@
 	<script src="<?= base_url() ?>assets/vendor/jquery.mousewheel.min.js"></script>
 	<script src="<?= base_url() ?>assets/js/theme.js"></script>
 
-	
-</body>
 
-</html>

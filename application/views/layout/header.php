@@ -21,6 +21,16 @@
 	<link rel="stylesheet" href="<?= base_url() ?>assets/vendor/lightgallery/css/lightgallery.min.css">
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/helper.css">
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/theme.css">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L3RR5PPDH"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-8L3RR5PPDH');
+	</script>
 </head>
 
 <body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">

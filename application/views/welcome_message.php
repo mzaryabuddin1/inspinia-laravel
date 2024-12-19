@@ -392,10 +392,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<h2 class="tt-heading-title">Let's Work<br> Begins!</h2>
 				</div>
 				<form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
-					<input type="hidden" name="project_name" value="yourwebsiteaddress.com">
-					<input type="hidden" name="admin_email" value="your@email.com">
-					<input type="hidden" name="form_subject"
-						value="Message from yourwebsiteaddress.com">
 					<div class="tt-row">
 						<div class="tt-col-md-6">
 							<div class="tt-form-group">
@@ -414,12 +410,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					</div>
 					<div class="tt-form-group">
 						<label>Subject <span class="required">*</span></label>
-						<input class="tt-form-control" type="text" name="Subject" placeholder=""
+						<input class="tt-form-control" type="text" name="subject" placeholder=""
 							required>
 					</div>
 					<div class="tt-form-group">
 						<label>Your Message <span class="required">*</span></label>
-						<textarea class="tt-form-control" rows="5" name="Message" placeholder="" required></textarea>
+						<textarea class="tt-form-control" rows="5" name="message" placeholder="" required></textarea>
 					</div>
 					<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 							required!</em></small>
@@ -436,3 +432,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </div>
 
 <?php require_once('layout/footer.php') ?>
+
+	
+</body>
+
+</html>

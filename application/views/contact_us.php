@@ -142,3 +142,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </div>
 
 <?php require_once('layout/footer.php') ?>
+	
+</body>
+
+</html>
