@@ -174,7 +174,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								$("#error").css("display", "block");
 								$(":submit").prop("disabled", false);
 								toastr.error("Please check errors list!", "Error");
-								$("#tt-contact-form").trigger("reset")
 							}else if (obj.success) {
 								toastr.success("We will get back to you shortly.!", "Thank You");
 								$("#error").css("display", "none");
