@@ -80,12 +80,12 @@ class Welcome extends CI_Controller {
             // $mail->addCC('safeeullah.hussainy@liveasoft.com'); // Recipient email
             // $mail->addCC('jawaid@liveasoft.com'); // Recipient email
 
-            $mail->addReplyTo($email, $name);
+            // $mail->addReplyTo($email, $name);
 
             // Content
             $mail->isHTML(true);
             $mail->Subject = $option ? $subject . " - " . $option : $subject ;
-            $mail->Body = nl2br($message);
+            $mail->Body = nl2br($message . " <br><br>Email from: <b>" . $email  .'</b>');
 
             $mail->send();
 
