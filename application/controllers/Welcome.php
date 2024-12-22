@@ -79,6 +79,7 @@ class Welcome extends CI_Controller {
             $mail->addCC('malik.zaryab@liveasoft.com'); // Recipient email
             $mail->addCC('safeeullah.hussainy@liveasoft.com'); // Recipient email
             $mail->addCC('jawaid@liveasoft.com'); // Recipient email
+            $mail->addCC('mohammadismail0622494@gmail.com'); // Recipient email
 
             // $mail->addReplyTo($email, $name);
 
