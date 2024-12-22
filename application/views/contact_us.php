@@ -100,7 +100,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<div class="tt-col-md-6">
 									<div class="tt-form-group">
 										<label>Email address <span class="required">*</span></label>
-										<input class="tt-form-control" type="text" name="Email"
+										<input class="tt-form-control" type="email" name="Email"
 											placeholder="" required>
 									</div>
 								</div>
