@@ -128,13 +128,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<input type="hidden" name="recaptcha_token" id="recaptcha_token">
 							<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 									required!</em></small>
-							<div id="error">
-							<small class="tt-form-text" style="color: red !important;"><em>Fields marked with an asterisk (*) are
-									required!</em></small>
-							<small class="tt-form-text" style="color: red !important;"><em>Fields marked with an asterisk (*) are
-									required!</em></small>
-							</div>
-							
+							<div id="error" style="color: red !important; display: none;"></div>
 							<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
 								<div data-hover="Send Message">Send Message</div>
 								<span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
@@ -182,7 +176,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								toastr.error("Please check errors list!", "Error");
 								$("#tt-contact-form").trigger("reset")
 							}else if (obj.success) {
-								toastr.success("Success!", "Hurray");
+								toastr.success("We will get back to you shortly.!", "Thank You");
 								$("#error").css("display", "none");
 								$("#tt-contact-form").trigger("reset")
 							}else {
