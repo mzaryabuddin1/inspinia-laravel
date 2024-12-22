@@ -43,7 +43,7 @@ class Welcome extends CI_Controller {
         $email = $information['Email'];
         $subject = $information['Subject'];
         $message = $information['Message'];
-        $option = $information['option'];
+        $option = isset($information['option']) ? $information['option'] : '';
         $recaptcha_token = $information['recaptcha_token'];
 
         // Verify reCAPTCHA token with Google API
