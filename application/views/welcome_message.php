@@ -417,6 +417,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						<label>Your Message <span class="required">*</span></label>
 						<textarea class="tt-form-control" rows="5" name="Message" placeholder="" required></textarea>
 					</div>
+					<input type="hidden" name="recaptcha_token" id="recaptcha_token">
+
 					<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 							required!</em></small>
 					<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
