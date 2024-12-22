@@ -25,10 +25,11 @@ class Welcome extends CI_Controller {
             exit('No direct script access allowed');
         }
 
-        $this->form_validation->set_rules('Name', 'Your Name', 'required');
+        $this->form_validation->set_rules('Name', 'Your Name', 'required|min_length[1]|max_length[100]');
         $this->form_validation->set_rules('Email', 'Email Address', 'required|valid_email');
-        $this->form_validation->set_rules('Subject', 'Subject', 'required');
-        $this->form_validation->set_rules('Message', 'Message', 'required');
+        $this->form_validation->set_rules('Subject', 'Subject', 'required|min_length[1]|max_length[100]');
+        $this->form_validation->set_rules('Message', 'Message', 'required|min_length[1]|max_length[5000]');
+        $this->form_validation->set_rules('option', 'Option', 'in_list[SayHello,NewProject,Feedback,Other]');
 
         if ($this->form_validation->run() == FALSE) {
             $errors = array('error' => validation_errors());
@@ -36,11 +37,14 @@ class Welcome extends CI_Controller {
             exit;
         }
 
-        $name = $this->input->post('Name');
-        $email = $this->input->post('Email');
-        $subject = $this->input->post('Subject');
-        $message = $this->input->post('Message');
-        $recaptcha_token = $this->input->post('recaptcha_token');
+		$information = $this->security->xss_clean($this->input->post());
+
+        $name = $information['Name'];
+        $email = $information['Email'];
+        $subject = $information['Subject'];
+        $message = $information['Message'];
+        $option = $information['option'];
+        $recaptcha_token = $information['recaptcha_token'];
 
         // Verify reCAPTCHA token with Google API
         $secret_key = '6LfZSKAqAAAAAKo9dyeSNEdIHK9i-BotFZkKBZ8J'; // Replace with your actual secret key
@@ -80,7 +84,7 @@ class Welcome extends CI_Controller {
 
             // Content
             $mail->isHTML(true);
-            $mail->Subject = $subject;
+            $mail->Subject = $option ? $subject . " - " . $option : $subject ;
             $mail->Body = nl2br($message);
 
             $mail->send();
@@ -88,7 +92,7 @@ class Welcome extends CI_Controller {
             $msg = array('success' => TRUE, 'msg' => 'We will get back to you shortly.');
             echo json_encode($msg);
         } catch (Exception $e) {
-            $msg = array('success' => FALSE, 'msg' => 'Mail could not be sent. Error: ' . $mail->ErrorInfo);
+            $msg = array('error' => FALSE, 'msg' => 'Mail could not be sent. Error: ' . $mail->ErrorInfo);
             echo json_encode($msg);
         }
     }

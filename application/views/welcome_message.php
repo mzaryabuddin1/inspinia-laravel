@@ -389,7 +389,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<div class="tt-section-inner tt-wrap max-width-700">
 				<div class="tt-heading tt-heading-xxlg margin-bottom-8-p anim-fadeinup">
 					<h3 class="tt-heading-subtitle">Contact Us</h3>
-					<h2 class="tt-heading-title">Let's Work<br> Begins!</h2>
+					<h2 class="tt-heading-title">Let's Talk<br> Begins!</h2>
 				</div>
 				<form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
 					<div class="tt-row">
@@ -410,12 +410,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					</div>
 					<div class="tt-form-group">
 						<label>Subject <span class="required">*</span></label>
-						<input class="tt-form-control" type="text" name="subject" placeholder=""
+						<input class="tt-form-control" type="text" name="Subject" placeholder=""
 							required>
 					</div>
 					<div class="tt-form-group">
 						<label>Your Message <span class="required">*</span></label>
-						<textarea class="tt-form-control" rows="5" name="message" placeholder="" required></textarea>
+						<textarea class="tt-form-control" rows="5" name="Message" placeholder="" required></textarea>
 					</div>
 					<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 							required!</em></small>
@@ -433,6 +433,55 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <?php require_once('layout/footer.php') ?>
 
+<script src="https://www.google.com/recaptcha/api.js?render=6LfZSKAqAAAAAIDXXoVOzET-Yui6rUzoKAP7MiX8"></script>
+<script>
+	$(document).ready(function() {
+		$("#tt-contact-form").submit(function(event) {
+			event.preventDefault(); // Prevent default form submission
+
+			grecaptcha.ready(function() {
+				grecaptcha.execute('6LfZSKAqAAAAAIDXXoVOzET-Yui6rUzoKAP7MiX8', {
+					action: 'submit'
+				}).then(function(token) {
+					$("#recaptcha_token").val(token); // Set the token in the hidden field
+
+					// Now submit the form with the reCAPTCHA token
+					$.ajax({
+						url: "<?= base_url() ?>contact-us-submit", // The PHP file that will process the form
+						method: "POST",
+						data: $("#tt-contact-form").serialize(),
+						dataType: "application/json",
+						beforeSend: function() {
+							$(":submit").prop("disabled", true);
+							$("#error").css("display", "none");
+						},
+						success: function(obj) {
+							if (obj.error) {
+								$("#error").html(obj.error);
+								$("#error").css("display", "block");
+								$(":submit").prop("disabled", false);
+								toastr.error("Please check errors list!", "Error");
+								$("#tt-contact-form").trigger("reset")
+							}else if (obj.success) {
+								toastr.success("Success!", "Hurray");
+								$("#error").css("display", "none");
+								$("#tt-contact-form").trigger("reset")
+							}else {
+								$(":submit").prop("disabled", false);
+								toastr.error("Something bad happened!", "Error");
+							}
+							$(":submit").prop("disabled", false);
+						},
+						 error: function(error) {
+							toastr.error("Error while sending request to server!", "Error");
+							$(":submit").prop("disabled", false);
+						}
+					});
+				});
+			});
+		});
+	});
+</script>
 	
 </body>
 

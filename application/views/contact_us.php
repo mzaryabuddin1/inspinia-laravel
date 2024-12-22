@@ -100,7 +100,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<div class="tt-col-md-6">
 									<div class="tt-form-group">
 										<label>Email address <span class="required">*</span></label>
-										<input class="tt-form-control" type="email" name="Email"
+										<input class="tt-form-control" type="text" name="Email"
 											placeholder="" required>
 									</div>
 								</div>
@@ -114,8 +114,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<label>Select an option <span class="required">*</span></label>
 								<select class="tt-form-control" name="option" required>
 									<option value="" disabled selected>Please choose an option</option>
-									<option value="Say Hello">Say hello</option>
-									<option value="New Project">New project</option>
+									<option value="SayHello">Say hello</option>
+									<option value="NewProject">New project</option>
 									<option value="Feedback">Feedback</option>
 									<option value="Other">Other</option>
 								</select>
@@ -128,6 +128,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<input type="hidden" name="recaptcha_token" id="recaptcha_token">
 							<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 									required!</em></small>
+							<div id="error">
+							<small class="tt-form-text" style="color: red !important;"><em>Fields marked with an asterisk (*) are
+									required!</em></small>
+							<small class="tt-form-text" style="color: red !important;"><em>Fields marked with an asterisk (*) are
+									required!</em></small>
+							</div>
+							
 							<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
 								<div data-hover="Send Message">Send Message</div>
 								<span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
@@ -161,13 +168,31 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						url: "<?= base_url() ?>contact-us-submit", // The PHP file that will process the form
 						method: "POST",
 						data: $("#tt-contact-form").serialize(),
-						success: function(response) {
-							alert("Message sent successfully!");
-							// Handle success, e.g., display a success message
+						dataType: "application/json",
+						beforeSend: function() {
+							$(":submit").prop("disabled", true);
+							$("#error").css("display", "none");
 						},
-						error: function(xhr, status, error) {
-							alert("An error occurred. Please try again.");
-							// Handle error
+						success: function(obj) {
+							if (obj.error) {
+								$("#error").html(obj.error);
+								$("#error").css("display", "block");
+								$(":submit").prop("disabled", false);
+								toastr.error("Please check errors list!", "Error");
+								$("#tt-contact-form").trigger("reset")
+							}else if (obj.success) {
+								toastr.success("Success!", "Hurray");
+								$("#error").css("display", "none");
+								$("#tt-contact-form").trigger("reset")
+							}else {
+								$(":submit").prop("disabled", false);
+								toastr.error("Something bad happened!", "Error");
+							}
+							$(":submit").prop("disabled", false);
+						},
+						 error: function(error) {
+							toastr.error("Error while sending request to server!", "Error");
+							$(":submit").prop("disabled", false);
 						}
 					});
 				});
