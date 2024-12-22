@@ -168,7 +168,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							$("#error").css("display", "none");
 						},
 						success: function(obj) {
-							console.log(obj)
 							if (obj.error) {
 								$("#error").html(obj.error);
 								$("#error").css("display", "block");

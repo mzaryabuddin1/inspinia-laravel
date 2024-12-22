@@ -421,6 +421,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 					<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 							required!</em></small>
+					<div id="error" style="color: red !important; display: none;"></div>
+
 					<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
 						<div data-hover="Send Message">Send Message</div>
 						<span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
@@ -452,7 +454,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						url: "<?= base_url() ?>contact-us-submit", // The PHP file that will process the form
 						method: "POST",
 						data: $("#tt-contact-form").serialize(),
-						dataType: "application/json",
+						dataType: "json",
 						beforeSend: function() {
 							$(":submit").prop("disabled", true);
 							$("#error").css("display", "none");
@@ -463,9 +465,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								$("#error").css("display", "block");
 								$(":submit").prop("disabled", false);
 								toastr.error("Please check errors list!", "Error");
-								$("#tt-contact-form").trigger("reset")
 							}else if (obj.success) {
-								toastr.success("Success!", "Hurray");
+								toastr.success("We will get back to you shortly.!", "Thank You");
 								$("#error").css("display", "none");
 								$("#tt-contact-form").trigger("reset")
 							}else {
