@@ -168,6 +168,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						url: "<?= base_url() ?>contact-us-submit", // The PHP file that will process the form
 						method: "POST",
 						data: $("#tt-contact-form").serialize(),
+						dataType: "application/json",
 						beforeSend: function() {
 							$(":submit").prop("disabled", true);
 							$("#error").css("display", "none");
