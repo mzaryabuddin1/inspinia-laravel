@@ -55,3 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['contact-us'] = 'welcome/contact_us';
 $route['contact-us-submit'] = 'welcome/contact_us_submit';
+$route['find-us'] = 'welcome/find_us';
+$route['about-us'] = 'welcome/about_us';
+

@@ -50,7 +50,7 @@
 												</div>
 												<div class="tt-ol-submenu">
 													<ul class="tt-ol-submenu-list">
-														<li><a href="#">About Us</a></li>
+														<li><a href="<?= base_url() ?>about-us">About Us</a></li>
 														<li><a href="#">About Team</a></li>
 													</ul>
 												</div>
@@ -65,7 +65,7 @@
 												<div class="tt-ol-submenu">
 													<ul class="tt-ol-submenu-list">
 														<li><a href="<?= base_url() ?>contact-us">Contact Form</a></li>
-														<li><a href="#">Find Us</a></li>
+														<li><a href="<?= base_url() ?>find-us">Find Us</a></li>
 													</ul>
 												</div>
 											</li>

@@ -8,6 +8,15 @@ class Welcome extends CI_Controller {
 
 	private $data;
 
+	public function __construct(){
+		parent::__construct();
+		
+		$this->data['email'] = "info@liveasoft.com";
+		$this->data['phone'] = "+(92) 319 332 9628";
+		$this->data['phone_format'] = "+923193329628";
+		$this->data['address'] = "Suit # 06, 2nd Floor, Arkay Square, Shahra-e-liaquat, Karachi, Pakistan.";
+	}
+
 	public function index()
 	{
 		$this->data['title'] = 'Home';
@@ -19,6 +28,7 @@ class Welcome extends CI_Controller {
 		$this->data['title'] = 'Contact Us';	
 		$this->load->view('contact_us', $this->data);
 	}
+
 
 	public function contact_us_submit() {
         if (!$this->input->is_ajax_request()) {
@@ -97,4 +107,17 @@ class Welcome extends CI_Controller {
             echo json_encode($msg);
         }
     }
+
+	
+	public function find_us()
+	{
+		$this->data['title'] = 'Find Us';	
+		$this->load->view('find_us', $this->data);
+	}
+
+	public function about_us()
+	{
+		$this->data['title'] = 'About Us';	
+		$this->load->view('about_us', $this->data);
+	}
 }

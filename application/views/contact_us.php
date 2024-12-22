@@ -46,15 +46,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						<ul class="tt-contact-info padding-bottom-40 anim-fadeinup">
 							<li>
 								<span class="tt-ci-icon"><i class="fas fa-map-marker-alt"></i></span>
-								Suit # 06, 2nd Floor, Arkay Square, Shahra-e-liaquat, Karachi, Pakistan.
+								<?= $address; ?>
 							</li>
 							<li>
 								<span class="tt-ci-icon"><i class="fas fa-phone"></i></span>
-								<a href="tel:+923193329628" class="tt-link">+(92) 319 332 9628</a>
+								<a href="tel:<?= $phone_format; ?>" class="tt-link"><?= $phone; ?></a>
 							</li>
 							<li>
 								<span class="tt-ci-icon"><i class="fas fa-envelope"></i></span>
-								<a href="mailto:info@liveasoft.com" class="tt-link">info@liveasoft.com</a>
+								<a href="mailto:<?= $address; ?>" class="tt-link"><?= $email; ?></a>
 							</li>
 							<li>
 								<h6 class="no-margin-bottom margin-top-40">Follow:</h6>
