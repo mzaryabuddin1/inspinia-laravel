@@ -55,83 +55,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
-		<div class="tt-section">
-			<div class="tt-section-inner">
-				<div class="tt-content-carousel cursor-drag cc-scale-down cc-hide-pagination cc-pagination-outside cc-hide-navigation" data-loop="true" data-simulate-touch="true" data-speed="900">
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="tt-content-carousel-item">
-									<figure>
-										<img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-1.jpg" alt="Image">
-									</figure>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="tt-content-carousel-item">
-									<figure>
-										<img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-2.jpg" alt="Image">
-									</figure>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="tt-content-carousel-item">
-									<figure>
-										<video class="tt-cc-video" loop muted preload="metadata" poster="assets/vids/office-team.jpg">
-											<source src="assets/vids/office-team.mp4" type="video/mp4">
-											<source src="assets/vids/office-team.webm" type="video/webm">
-										</video>
-									</figure>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="tt-content-carousel-item">
-									<figure>
-										<img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-3.jpg" alt="Image">
-									</figure>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="tt-content-carousel-item">
-									<figure>
-										<img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-4.jpg" alt="Image">
-									</figure>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="tt-content-carousel-item">
-									<figure>
-										<img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-5.jpg" alt="Image">
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tt-cc-nav-prev">
-						<div class="tt-cc-nav-arrow magnetic-item"><i class="tt-arrow-left"></i></div>
-					</div>
-					<div class="tt-cc-nav-next">
-						<div class="tt-cc-nav-arrow magnetic-item"><i class="tt-arrow-right"></i></div>
-					</div>
-					<div class="tt-cc-pagination hide-cursor"></div>
-				</div>
-			</div>
-		</div>
 		<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
 			<div class="tt-section-inner tt-wrap">
 				<div class="tt-row padding-bottom-2-p">
 					<div class="tt-col-lg-7">
 						<div class="tt-heading tt-heading-xlg anim-fadeinup">
 							<h3 class="tt-heading-subtitle">Our Services</h3>
-							<h2 class="tt-heading-title">Digital Innovation</h2>
+							<h2 class="tt-heading-title">Software Innovation</h2>
 						</div>
 					</div>
 					<div class="tt-col-lg-5 tt-align-self-center">
 						<div class="anim-fadeinup">
-							<h5>When passion, courage, and craftsmanship are put into something, positive things will happen.</h5>
+							<h5>When innovation, dedication, and expertise come together, extraordinary
+								solutions emerge.</h5>
 						</div>
 						<div class="text-gray anim-fadeinup">
-							<p>Their could can widen ten she any. As so we smart those money in. Am wrote up whole so tears sense oh. Absolute required of reserved in offering no.</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -139,7 +78,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<div class="tt-accordion-item anim-fadeinup">
 						<div class="tt-accordion-heading">
 							<div class="tt-ac-head cursor-alter">
-								<h3 class="tt-ac-head-title">UX / Research</h3>
+								<h3 class="tt-ac-head-title">UI/UX</h3>
 							</div>
 							<div class="tt-accordion-caret-wrap">
 								<div class="tt-accordion-caret-inner magnetic-item">
@@ -148,13 +87,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="tt-accordion-content max-width-800">
-							<p>Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you him <a href="">newspaper assurance</a>. Prepare garrets it expense windows shewing do an. She projection advantages resolution son indulgence. Part sure on no long life am at ever. In songs above he as drawn.</p>
+							<p>We create visually stunning and user-centric designs that deliver
+										seamless experiences. Our focus is on enhancing usability and
+										engagement for your digital platforms. From wireframes to
+										prototypes, we ensure every interaction feels intuitive.</p>
 						</div>
 					</div>
 					<div class="tt-accordion-item anim-fadeinup">
 						<div class="tt-accordion-heading">
 							<div class="tt-ac-head cursor-alter">
-								<h3 class="tt-ac-head-title">Digital Strategy</h3>
+								<h3 class="tt-ac-head-title">Website Development</h3>
 							</div>
 							<div class="tt-accordion-caret-wrap">
 								<div class="tt-accordion-caret-inner magnetic-item">
@@ -163,13 +105,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="tt-accordion-content max-width-800">
-							<p>Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his.</p>
+							<p>Our website development services build dynamic, scalable, and
+										visually appealing websites. We specialize in creating responsive
+										designs that perform flawlessly across devices. From e-commerce to
+										corporate sites, we deliver tailor-made solutions.</p>
 						</div>
 					</div>
 					<div class="tt-accordion-item anim-fadeinup">
 						<div class="tt-accordion-heading">
 							<div class="tt-ac-head cursor-alter">
-								<h3 class="tt-ac-head-title">Branding & Identity</h3>
+								<h3 class="tt-ac-head-title">Mobile Application Development</h3>
 							</div>
 							<div class="tt-accordion-caret-wrap">
 								<div class="tt-accordion-caret-inner magnetic-item">
@@ -178,13 +123,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="tt-accordion-content max-width-800">
-							<p>Rank tall boy man them over post now. Off into she bed long fat room. Recommend existence curiosity perfectly favourite get eat she why daughters. Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have.</p>
+							<p>We develop innovative and user-friendly mobile applications for iOS
+										and Android. Our apps are designed for optimal performance and
+										intuitive user experiences. From idea to deployment, we turn
+										concepts into impactful mobile solutions.</p>
 						</div>
 					</div>
 					<div class="tt-accordion-item anim-fadeinup">
 						<div class="tt-accordion-heading">
 							<div class="tt-ac-head cursor-alter">
-								<h3 class="tt-ac-head-title">Content Production</h3>
+								<h3 class="tt-ac-head-title">Social Media Marketing</h3>
 							</div>
 							<div class="tt-accordion-caret-wrap">
 								<div class="tt-accordion-caret-inner magnetic-item">
@@ -193,7 +141,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="tt-accordion-content max-width-800">
-							<p>To sure calm much most long me mean. Able rent long in do we. Uncommonly no it announcing melancholy an in. Mirth learn it he given. Secure shy favour length all twenty denote. He felicity no an at packages answered opinions juvenile.</p>
+							<p>Our social media marketing strategies amplify your brand's presence
+										across platforms. We focus on creating engaging content and
+										data-driven campaigns to boost reach. From planning to execution, we
+										help you connect with your audience effectively.</p>
 						</div>
 					</div>
 				</div>
@@ -216,9 +167,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										<div class="tt-testimonials-slider-item">
 											<div class="tt-ts-item-inner">
 												<div class="tt-ts-text">
-													"One of the best template I've ever had. I love it! It's fully customizable, well coded, fast and responsive - fitting for all kind of devices."
+													"Liveasoft transformed our ideas into stunning visuals with their unique and creative approach. Highly professional team!"
 												</div>
-												<div class="tt-ts-subtext">- Wironimo</div>
+												<div class="tt-ts-subtext">- Owais Ahmed</div>
 											</div>
 										</div>
 									</div>
@@ -226,9 +177,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										<div class="tt-testimonials-slider-item">
 											<div class="tt-ts-item-inner">
 												<div class="tt-ts-text">
-													"Brilliant template. Tons of options, many concepts, design flexibility, code quality, explanatory comments in each section for easy styling."
+													"From concept to completion, the Liveasoft team delivered a seamless experience. Their dedication is unmatched!"
 												</div>
-												<div class="tt-ts-subtext">- Gneto</div>
+												<div class="tt-ts-subtext">- Shahzaib</div>
 											</div>
 										</div>
 									</div>
@@ -236,9 +187,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										<div class="tt-testimonials-slider-item">
 											<div class="tt-ts-item-inner">
 												<div class="tt-ts-text">
-													"Easy to customize, plenty of choices to display your portfolio, fast loading times. Excellent support."
+													"The developers at Liveasoft exceeded our expectations, providing tailored solutions that enhanced our business performance."
 												</div>
-												<div class="tt-ts-subtext">- Brendak</div>
+												<div class="tt-ts-subtext">- Zaheer Ansari</div>
 											</div>
 										</div>
 									</div>
@@ -283,84 +234,106 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				</div>
 				<ul class="tt-logo-wall anim-fadeinup">
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-1-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-1-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/almarai-light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/almarai-dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-2-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-2-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/Noon-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/Noon-Dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-3-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-3-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/UJS-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/UJS-Dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-4-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-4-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/Blinds-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/Blinds-Dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-5-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-5-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/CRM-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/CRM-Dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-6-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-6-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/Healthberry-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/Healthberry-Dark.png" class="lv-client-dark"
+								alt="Client">
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/Fragrance-Light-01.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/Fragrance-Dark-01.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-7-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-7-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/Engineering-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/Engineering-Dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-8-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-8-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/Sponto-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/Sponto-Dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
+
 					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-9-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-9-dark.png" class="lv-client-dark" alt="Client">
+						<a href="#" class="cursor-alter"
+							rel="noopener">
+							<img src="assets/img/clients/Digitizing-Light.png" class="lv-client-light"
+								alt="Client">
+							<img src="assets/img/clients/Digitizing-Dark.png" class="lv-client-dark"
+								alt="Client">
 						</a>
 					</li>
-					<li>
-						<a href="https://themetorium.net/" class="cursor-alter" target="_blank" rel="noopener">
-							<img src="assets/img/clients/client-10-light.png" class="lv-client-light" alt="Client">
-							<img src="assets/img/clients/client-10-dark.png" class="lv-client-dark" alt="Client">
-						</a>
-					</li>
+
+
 				</ul>
-			</div>
-		</div>
-		<div class="tt-section no-padding">
-			<div class="tt-section-inner">
-				<div class="tt-image tti-fixed-height">
-					<figure>
-						<img class="anim-image-parallax tt-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-6.jpg" alt="image">
-						<figcaption>
-							Image Caption
-						</figcaption>
-					</figure>
-				</div>
 			</div>
 		</div>
 		<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
 			<div class="tt-section-inner tt-wrap">
 				<div class="tt-page-nav tt-pn-stroke">
-					<a href="contact.html" class="tt-pn-link anim-fadeinup" data-cursor="<i class='fas fa-envelope'></i>">
+					<a href="<?= base_url() ?>contact-us" class="tt-pn-link anim-fadeinup" data-cursor="<i class='fas fa-envelope'></i>">
 						<div class="tt-pn-title">Let's talk</div>
 						<div class="tt-pn-hover-title">Let's talk</div>
 					</a>

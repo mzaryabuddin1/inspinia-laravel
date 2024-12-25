@@ -20,12 +20,14 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->data['title'] = 'Home';
+		$this->data['pagetab'] = 'home';
 		$this->load->view('welcome_message', $this->data);
 	}
 
 	public function contact_us()
 	{
-		$this->data['title'] = 'Contact Us';	
+		$this->data['title'] = 'Contact Us';
+		$this->data['pagetab'] = 'contact';
 		$this->load->view('contact_us', $this->data);
 	}
 
@@ -112,12 +114,21 @@ class Welcome extends CI_Controller {
 	public function find_us()
 	{
 		$this->data['title'] = 'Find Us';	
+		$this->data['pagetab'] = 'contact';
 		$this->load->view('find_us', $this->data);
 	}
 
 	public function about_us()
 	{
 		$this->data['title'] = 'About Us';	
+		$this->data['pagetab'] = 'about';
 		$this->load->view('about_us', $this->data);
+	}
+
+	public function about_team()
+	{
+		$this->data['title'] = 'About Team';	
+		$this->data['pagetab'] = 'about';
+		$this->load->view('about_team', $this->data);
 	}
 }

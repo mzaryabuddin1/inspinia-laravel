@@ -287,8 +287,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
 			<div class="tt-section-inner tt-wrap">
 				<ul class="tt-logo-wall anim-fadeinup">
-				<li>
-						<a href="#" class="cursor-alter" 
+					<li>
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/almarai-light.png" class="lv-client-light"
 								alt="Client">
@@ -297,7 +297,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						</a>
 					</li>
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/Noon-Light.png" class="lv-client-light"
 								alt="Client">
@@ -306,7 +306,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						</a>
 					</li>
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/UJS-Light.png" class="lv-client-light"
 								alt="Client">
@@ -315,7 +315,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						</a>
 					</li>
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/Blinds-Light.png" class="lv-client-light"
 								alt="Client">
@@ -324,7 +324,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						</a>
 					</li>
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/CRM-Light.png" class="lv-client-light"
 								alt="Client">
@@ -333,7 +333,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						</a>
 					</li>
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/Healthberry-Light.png" class="lv-client-light"
 								alt="Client">
@@ -341,9 +341,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								alt="Client">
 						</a>
 					</li>
-				
+
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/Fragrance-Light-01.png" class="lv-client-light"
 								alt="Client">
@@ -352,7 +352,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						</a>
 					</li>
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/Engineering-Light.png" class="lv-client-light"
 								alt="Client">
@@ -361,7 +361,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						</a>
 					</li>
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/Sponto-Light.png" class="lv-client-light"
 								alt="Client">
@@ -369,9 +369,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								alt="Client">
 						</a>
 					</li>
-				
+
 					<li>
-						<a href="#" class="cursor-alter" 
+						<a href="#" class="cursor-alter"
 							rel="noopener">
 							<img src="assets/img/clients/Digitizing-Light.png" class="lv-client-light"
 								alt="Client">
@@ -379,8 +379,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								alt="Client">
 						</a>
 					</li>
-			
-				
+
+
 				</ul>
 			</div>
 		</div>
@@ -432,7 +432,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</div>
 	</div>
 	<?php require_once('layout/subfooter.php') ?>
-	
+
 </div>
 
 <?php require_once('layout/footer.php') ?>
@@ -465,17 +465,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								$("#error").css("display", "block");
 								$(":submit").prop("disabled", false);
 								toastr.error("Please check errors list!", "Error");
-							}else if (obj.success) {
+							} else if (obj.success) {
 								toastr.success("We will get back to you shortly.!", "Thank You");
 								$("#error").css("display", "none");
 								$("#tt-contact-form").trigger("reset")
-							}else {
+							} else {
 								$(":submit").prop("disabled", false);
 								toastr.error("Something bad happened!", "Error");
 							}
 							$(":submit").prop("disabled", false);
 						},
-						 error: function(error) {
+						error: function(error) {
 							toastr.error("Error while sending request to server!", "Error");
 							$(":submit").prop("disabled", false);
 						}
@@ -485,7 +485,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		});
 	});
 </script>
-	
+
 </body>
 
 </html>

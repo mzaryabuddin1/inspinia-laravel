@@ -57,4 +57,5 @@ $route['contact-us'] = 'welcome/contact_us';
 $route['contact-us-submit'] = 'welcome/contact_us_submit';
 $route['find-us'] = 'welcome/find_us';
 $route['about-us'] = 'welcome/about_us';
+$route['about-team'] = 'welcome/about_team';
 

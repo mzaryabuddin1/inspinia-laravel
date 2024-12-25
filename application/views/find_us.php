@@ -82,12 +82,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
 			<div class="tt-section-inner tt-wrap">
 				<div class="tt-page-nav tt-pn-stroke">
-					<a href="portfolio-grid-creative.html" class="tt-pn-link anim-fadeinup"
-						data-cursor="<i class='fas fa-arrow-right'></i>">
-						<div class="tt-pn-title">Portfolio</div>
-						<div class="tt-pn-hover-title">Portfolio</div>
+					<a href="<?= base_url() ?>contact-us" class="tt-pn-link anim-fadeinup" data-cursor="<i class='fas fa-envelope'></i>">
+						<div class="tt-pn-title">Let's talk</div>
+						<div class="tt-pn-hover-title">Let's talk</div>
 					</a>
-					<div class="tt-pn-subtitle anim-fadeinup">Selected Works</div>
+					<div class="tt-pn-subtitle anim-fadeinup">Get in Touch</div>
 				</div>
 			</div>
 		</div>
