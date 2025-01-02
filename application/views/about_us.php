@@ -9,11 +9,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <div id="content-wrap">
 	<div id="page-header" class="ph-full ph-cap-lg ph-ghost-scroll ph-image-cropped ph-image-cover-2 ph-content-parallax">
 		<div class="page-header-inner tt-wrap">
-			<div class="ph-image">
+			<!-- <div class="ph-image">
 				<div class="ph-image-inner">
 					<img src="assets/img/page-header/ph-4.jpg" alt="Image">
 				</div>
-			</div>
+			</div> -->
 			<div class="ph-caption max-width-1000">
 				<div class="ph-caption-subtitle">
 					<div class="ph-appear">About Us</div>
@@ -22,7 +22,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<div class="ph-appear">Liveasoft</div>
 				</h1>
 				<div class="ph-caption-title-ghost">
-					<div class="ph-appear">Liveasoft</div>
+					<div class="ph-appear">Limitless Transformation</div>
 				</div>
 			</div>
 		</div>
@@ -190,26 +190,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 													"The developers at Liveasoft exceeded our expectations, providing tailored solutions that enhanced our business performance."
 												</div>
 												<div class="tt-ts-subtext">- Zaheer Ansari</div>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="tt-testimonials-slider-item">
-											<div class="tt-ts-item-inner">
-												<div class="tt-ts-text">
-													"Very nice design and well organised and commented code. Also good customer service."
-												</div>
-												<div class="tt-ts-subtext">- Gazzzzz</div>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="tt-testimonials-slider-item">
-											<div class="tt-ts-item-inner">
-												<div class="tt-ts-text">
-													"I founded a bug on Iphone and Ipad and the author fixed very quickly. I appreciated his efforts and his quickness in solving the problem."
-												</div>
-												<div class="tt-ts-subtext">- Admanente</div>
 											</div>
 										</div>
 									</div>

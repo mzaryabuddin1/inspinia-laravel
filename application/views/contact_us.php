@@ -62,21 +62,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									<ul>
 										<li>
 											<div class="magnetic-wrap"><a
-													href="#"
+													href="https://www.facebook.com/liveasoftofficial/"
 													class="magnetic-item not-hide-cursor" target="_blank"
 													rel="noopener" style=""><i
 														class="fab fa-facebook-f"></i></a></div>
 										</li>
 										<li>
 											<div class="magnetic-wrap"><a
-													href="#"
+													href="https://wa.me/923193329628?text=Hi"
 													class="magnetic-item not-hide-cursor" target="_blank"
 													rel="noopener" style=""><i
-														class="fab fa-linkedin"></i></a></div>
+														class="fab fa-whatsapp"></i></a></div>
 										</li>
 										<li>
 											<div class="magnetic-wrap"><a href="<?= base_url() ?>"
-													class="magnetic-item not-hide-cursor" target="_blank"
+													class="magnetic-item not-hide-cursor" 
 													rel="noopener" style=""><i
 														class="fas fa-globe"></i></a></div>
 										</li>

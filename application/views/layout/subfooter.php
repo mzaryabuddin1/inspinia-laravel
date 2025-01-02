@@ -27,12 +27,12 @@
 						</div>
 						<div class="social-buttons">
 							<ul>
-								<li><a href="#" class="magnetic-item"
+								<li><a href="https://www.facebook.com/liveasoftofficial/" class="magnetic-item"
 										target="_blank" rel="noopener"><i
 											class="fab fa-facebook-f"></i></a>
 								</li>
-								<li><a href="#" class="magnetic-item"
-										target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+								<li><a href="https://wa.me/923193329628?text=Hi" class="magnetic-item"
+										target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
 								</li>
 								<li><a href="<?= base_url() ?>" class="magnetic-item"
 										rel="noopener"><i class="fas fa-globe"></i></a>

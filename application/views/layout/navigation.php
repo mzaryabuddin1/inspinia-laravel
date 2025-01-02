@@ -27,20 +27,6 @@
 						<div class="tt-ol-menu-content">
 							<ul class="tt-ol-menu-list">
 								<li class="<?= $pagetab === "home" ? "active" : "" ?>"><a href="<?= base_url() ?>">Home</a></li>
-								<li class="tt-ol-submenu-wrap">
-									<div class="tt-ol-submenu-trigger">
-										<a href="#">Portfolio</a>
-										<div class="tt-ol-submenu-caret-wrap">
-											<div class="tt-ol-submenu-caret magnetic-item"></div>
-										</div>
-									</div>
-									<div class="tt-ol-submenu">
-										<ul class="tt-ol-submenu-list">
-											<li><a href="#">Product List</a></li>
-											<li><a href="#">Digital Assets</a></li>
-										</ul>
-									</div>
-								</li>
 								<li class="tt-ol-submenu-wrap <?= $pagetab === "about" ? "active" : "" ?>">
 									<div class="tt-ol-submenu-trigger">
 										<a href="#">About</a>
@@ -74,9 +60,9 @@
 								<li>
 									<h6 class="tt-ol-menu-social-heading">Social Links:</h6>
 								</li>
-								<li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-								<li><a href="#" target="_blank" rel="noopener">Linkedin</a></li>
-								<li><a href="#" target="_blank" rel="noopener">Website</a></li>
+								<li><a href="https://www.facebook.com/liveasoftofficial/" target="_blank" rel="noopener">Facebook</a></li>
+								<li><a href="https://wa.me/923193329628?text=Hi" target="_blank" rel="noopener">WhatsApp</a></li>
+								<li><a href="<?= base_url() ?>"  rel="noopener">Website</a></li>
 							</ul>
 						</div>
 					</div>
