@@ -4,6 +4,137 @@
 
 <head>
 	<title><?= $title !== 'Home' ?  $title . " - Liveasoft": "Liveasoft - Limitless Transformation" ?></title>
+	
+	<?php if($title === 'Home') {?>
+
+		<meta name="keywords" content="Liveasoft, mobile app development, web app development, innovative technology solutions, business transformation">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Liveasoft" />
+		<meta property="og:url" content="https://liveasoft.com/">
+		<meta property="og:title" content="Liveasoft - Limitless Transformation">
+		<meta property="og:description" content="Liveasoft specializes in innovative mobile and web application development, delivering customized solutions to transform possibilities into reality. Empowering businesses with cutting-edge technology.">
+		<meta property="og:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+		<meta property="og:image:secure_url" content="https://www.liveasoft.com/assets/img/logo-dark.png" />
+		<meta property="og:image:alt" content="Liveasoft - Limitless Transformation" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="628" />
+		<meta property="og:image:type" content="image/png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://liveasoft.com/">
+		<meta property="twitter:title" content="Liveasoft - Limitless Transformation">
+		<meta property="twitter:description" content="Liveasoft specializes in innovative mobile and web application development, delivering customized solutions to transform possibilities into reality. Empowering businesses with cutting-edge technology.">
+		<meta property="twitter:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+	
+	<?php } else if($title === 'Contact Us') {?>
+	
+		<meta name="description" content="Get in touch with Liveasoft for innovative web and mobile application solutions. We're here to answer your queries and discuss your project needs.">
+		<meta name="keywords" content="Liveasoft contact, mobile apps, web solutions, support, customer service, project discussion">
+		<link rel="canonical" href="https://liveasoft.com/contact-us">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Liveasoft" />
+		<meta property="og:url" content="https://liveasoft.com/contact-us">
+		<meta property="og:title" content="Contact Us - Liveasoft">
+		<meta property="og:description" content="Get in touch with Liveasoft for innovative web and mobile application solutions. We're here to answer your queries and discuss your project needs.">
+		<meta property="og:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+		<meta property="og:image:alt" content="Contact Us - Liveasoft">
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="628" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://liveasoft.com/contact-us">
+		<meta property="twitter:title" content="Contact Us - Liveasoft - Limitless Transformation">
+		<meta property="twitter:description" content="Get in touch with Liveasoft for innovative web and mobile application solutions. We're here to answer your queries and discuss your project needs.">
+		<meta property="twitter:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+
+	<?php } else if($title === 'Find Us') {?>
+
+		<meta name="description" content="Locate Liveasoft offices and explore how our innovative solutions can empower your business.">
+		<meta name="keywords" content="Liveasoft location, find Liveasoft, office locations, innovative solutions, business empowerment">
+		<link rel="canonical" href="https://liveasoft.com/find-us">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Liveasoft" />
+		<meta property="og:url" content="https://liveasoft.com/find-us">
+		<meta property="og:title" content="Find Us - Liveasoft">
+		<meta property="og:description" content="Locate Liveasoft offices and explore how our innovative solutions can empower your business.">
+		<meta property="og:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+		<meta property="og:image:alt" content="Find Us - Liveasoft">
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="628" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://liveasoft.com/find-us">
+		<meta property="twitter:title" content="Find Us - Liveasoft">
+		<meta property="twitter:description" content="Locate Liveasoft offices and explore how our innovative solutions can empower your business.">
+		<meta property="twitter:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+
+	<?php } else if($title === 'About Us') {?>
+
+		<meta name="description" content="Learn about Liveasoft's mission and vision. We strive to innovate and deliver exceptional web and mobile application development solutions.">
+		<link rel="canonical" href="https://liveasoft.com/about-us/">
+		
+		<meta name="keywords" content="Liveasoft, about us, company mission, vision, technology solutions, innovative applications">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Liveasoft" />
+		<meta property="og:url" content="https://liveasoft.com/about-us/">
+		<meta property="og:title" content="About Us - Liveasoft">
+		<meta property="og:description" content="Learn about Liveasoft's mission and vision. We strive to innovate and deliver exceptional web and mobile application development solutions.">
+		<meta property="og:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+		<meta property="og:image:secure_url" content="https://www.liveasoft.com/assets/img/logo-dark.png" />
+		<meta property="og:image:alt" content="About Us - Liveasoft" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="628" />
+		<meta property="og:image:type" content="image/png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://liveasoft.com/about-us/">
+		<meta property="twitter:title" content="About Us - Liveasoft">
+		<meta property="twitter:description" content="Learn about Liveasoft's mission and vision. We strive to innovate and deliver exceptional web and mobile application development solutions.">
+		<meta property="twitter:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+	
+	<?php } else if($title === 'About Team') {?>
+	
+		<meta name="description" content="Meet the expert team at Liveasoft, driving innovation and excellence in mobile and web application development.">
+		<meta name="keywords" content="Liveasoft team, expert developers, innovation, excellence, mobile applications, web solutions">
+		<link rel="canonical" href="https://liveasoft.com/about-team">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Liveasoft" />
+		<meta property="og:url" content="https://liveasoft.com/about-team">
+		<meta property="og:title" content="About Team - Liveasoft">
+		<meta property="og:description" content="Meet the expert team at Liveasoft, driving innovation and excellence in mobile and web application development.">
+		<meta property="og:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+		<meta property="og:image:alt" content="About Team - Liveasoft">
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="628" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://liveasoft.com/about-team">
+		<meta property="twitter:title" content="About Team - Liveasoft">
+		<meta property="twitter:description" content="Meet the expert team at Liveasoft, driving innovation and excellence in mobile and web application development.">
+		<meta property="twitter:image" content="https://www.liveasoft.com/assets/img/logo-dark.png">
+
+	<?php }?>
+	
 	<meta charset="utf-8">
 	<meta name="description"
 		content="Liveasoft specializes in innovative mobile and web application development, delivering customized solutions to transform possibilities into reality. Empowering businesses with cutting-edge technology.">
